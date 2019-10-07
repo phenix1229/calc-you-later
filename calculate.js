@@ -13,6 +13,8 @@ function calculate(num1, num2, operation) {
     } else if (operation === '%' || operation === 'mod' || operation === 'modulus'){
         result = n1 % n2;
     } else {
+        console.log(n1)
+        console.log(operation)
         result = 'Sorry, that\'s not a mathematical operation!'
     }
 
