@@ -52,4 +52,20 @@ describe('calculate', () => {
   it(`allows for the shortening 'mod' in a modulus operation`, () => {
     expect(calculate('15', '4', 'mod')).toBe(3)
   })
+
+  it(`allows for the words 'added to' in addition`, () => {
+    expect(calculate('3', '5', 'added to')).toBe(8)
+  })
+  
+  it(`allows for the words 'subtracted from' in subtraction`, () => {
+    expect(calculate('3', '5', 'subtracted from')).toBe(-2)
+  })
+
+  it(`allows for the words 'multiplied by' in division`, () => {
+    expect(calculate('3', '5', 'multiplied by')).toBe(15)
+  })
+
+  it(`allows for the words 'divided by' in division`, () => {
+    expect(calculate('15', '5', 'divided by')).toBe(3)
+  })
 });
